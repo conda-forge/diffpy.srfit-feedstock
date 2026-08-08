@@ -1,6 +1,6 @@
 {% set name = "diffpy.srfit" %}
-{% set version = "3.2.0" %}
-{% set python_min = "3.11" %}
+{% set version = "3.3.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/d/diffpy_srfit/diffpy_srfit-{{ version }}.tar.gz
-  sha256: 46be52c7304a2f244c05dbefbc5510803a60ac583a17def84591687dc03617c2
+  sha256: 5e146a0e0eb3780a85ad2824d567707ee1d4e60b6028f819046045884d1be16f
 
 build:
   noarch: python
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
+  entry_points:
+    -  diffpy.srfit = diffpy.srfit.srfit_app:main
 
 requirements:
   host:
@@ -28,23 +30,25 @@ requirements:
     - matplotlib-base
     - scipy
 
-test: 
+test:
   requires:
-    - python {{ python_min }} 
+    - python {{ python_min }}
     - pip
     - pytest
     - sympy
   source_files:
     - tests
+
   commands:
     - pip check
     - pytest
 
 about:
   home: https://github.com/diffpy/diffpy.srfit/
+  summary: Generalized code base for modeling problems.
   license: LicenseRef-diffpy
+  license_family: BSD
   license_file: LICENSE.rst
-  summary: Open source (the license is 100% compatible with bsd-3 clause) configurable code for solving atomic structures.
   description: |
     The diffpy.srfit package provides the framework for building a global 
     optimizer on the fly from components such as function calculators 
@@ -58,6 +62,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - cadenmyers13
-    - Tieqiong
     - sbillinge
+    - cadenmyers13
