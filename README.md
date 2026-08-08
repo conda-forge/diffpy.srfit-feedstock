@@ -7,7 +7,7 @@ Home: https://github.com/diffpy/diffpy.srfit/
 
 Package license: LicenseRef-diffpy
 
-Summary: Generalized code base for modeling problems.
+Summary: Open source (the license is 100% compatible with bsd-3 clause) code base for modeling problems.
 
 Development: https://github.com/diffpy/diffpy.srfit
 
@@ -201,6 +201,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Tieqiong](https://github.com/Tieqiong/)
 * [@cadenmyers13](https://github.com/cadenmyers13/)
 * [@sbillinge](https://github.com/sbillinge/)
 
