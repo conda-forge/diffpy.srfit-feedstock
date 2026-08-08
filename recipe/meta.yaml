@@ -29,6 +29,9 @@ requirements:
     - numpy
     - matplotlib-base
     - scipy
+    - bg-mpl-stylesheets
+    - diffpy.utils
+    - diffpy.structure
 
 test:
   requires:
