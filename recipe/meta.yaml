@@ -45,9 +45,8 @@ test:
 
 about:
   home: https://github.com/diffpy/diffpy.srfit/
-  summary: Generalized code base for modeling problems.
+  summary: Open source (the license is 100% compatible with bsd-3 clause) code base for modeling problems.
   license: LicenseRef-diffpy
-  license_family: BSD
   license_file: LICENSE.rst
   description: |
     The diffpy.srfit package provides the framework for building a global 
@@ -64,3 +63,4 @@ extra:
   recipe-maintainers:
     - sbillinge
     - cadenmyers13
+    - Tieqiong
