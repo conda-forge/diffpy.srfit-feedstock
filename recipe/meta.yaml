@@ -1,5 +1,5 @@
 {% set name = "diffpy.srfit" %}
-{% set version = "3.3.1" %}
+{% set version = "3.4.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/d/diffpy_srfit/diffpy_srfit-{{ version }}.tar.gz
-  sha256: 9cff8ac3a9658c0975e74dfbe95ee2c79bf3652fd20be1905c2efd075a766e47
+  sha256: 8dd1fca42a01542fab1178c82110c809a4693225f5b98cb2b2fb1cb9cc7702d9
 
 build:
   noarch: python
